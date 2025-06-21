@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <p id="name">D Punith Reddy</p>
+            <div class="thing">
+            <div class="contact-info">
+                <img src="html_finalprojimages/email.png" alt="" class="contact-info-icon">
+                <p>dpunith5731@gmail.com</p>
+                <img src="html_finalprojimages/phone.png" alt="" class="contact-info-icon">
+                <p>76XX5XX3XXX4</p>
+            </div>
+            
+            <div id="menu">
+                <a class="top-menu" href="#about-me">About me</a>
+                <a class="top-menu" href="#skills">Skills</a>
+                <a class="top-menu" href="#projects">Projects</a>
+                <a class="top-menu" href="#recomandations">recomandations</a>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="about-me">
+        <img src="html_finalprojimages/profile.gif" alt="" class="profile_image">
+        <div>
+        <p class="title-intro">Hi, I'm Punith! </p>
+        <p class="intro">
+            I am a second year college student who shares passion in web development, design ,coding and graphics.
+            i am aiming to reach the best i can with all the interests and potential in me. this is going to be my
+             first web dev project and i am excited to see how it turns out.
+        </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <p class="skills-title">Skills</p>
+        <div class="all-skills">
+
+        <div class="skills">
+            <img src="html_finalprojimages/html.png" alt="" class="skill-icon">
+            <p> HTML</p>
+        </div>
+        <div class="skills">
+            <img src="html_finalprojimages/css.jpg" alt="" class="skill-icon">
+            <p> CSS</p>
+        </div>
+        <div class="skills">
+            <img src="html_finalprojimages/js.png" alt="" class="skill-icon">
+            <p> JavaScript</p>
+        </div>
+        <div class="skills">
+            <img src="html_finalprojimages/java.png" alt="" class="skill-icon">
+            <p> JAVA</p>
+        </div>
+        <div class="skills">
+            <img src="html_finalprojimages/python.png" alt="" class="skill-icon">
+            <p> PYTHON</p>
+        </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <p class="skills-title">Projects</p>
+        <div class="all-projects">
+            <div class="project">
+                <p class="project-name">Portfolio</p>
+                <ul>
+                <li><p class="project-intro">Made a website to showcase my portfolia which has a list of my skills and projects</p></li>
+                </ul>
+            </div>
+            <div class="project">
+                <p class="project-name">3D modals</p>
+                <ul>
+                <li><p class="project-intro">Made few 3D modal illustrators in blender for modeling </p></li>
+                </ul>
+            </div>
+            <div class="project">
+                <p class="project-name">Online learning platform</p>
+                <ul>
+                <li><p class="project-intro">Made a online learning platform using swing and applet in java</p></li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+
+    <section>
+        <a href="#home">
+            <img src="html_finalprojimages/up.png" alt="" class="up">
+        </a>
+    </section>
+
+    <section id="recomandations">
+        <p class="skills-title">Recomandations</p>
+
+        <div class="all-recommendation">
+            <p class="recommendation-container">Punith is a highly dedicated and self-motivated individual with a keen eye for detail and a strong grasp of technical concepts. His consistent effort, problem-solving skills, and ability to adapt make him a valuable asset to any team or organization.</p>
+        
+        
+        
+            <p class="recommendation-container">During our time working together, Punith demonstrated excellent command over software development practices. His ability to combine technical skills with innovative thinking helped bring complex projects to life efficiently and effectively</p>
+        
+        
+        
+            <p class="recommendation-container">Punith stands out as a reliable team player who balances technical depth with clear communication. He’s always willing to learn, take feedback positively, and support others—a quality that drives team success.</p>
+        </div>
+        <div class="lev-rec">
+            <p class="rec">Leave a recommendation</p>
+            <input type="text" placeholder="Name(optional)" cols="100" class="rec-name"> <br> <br>
+            <textarea name="new-rec" id="new-rec" rows="17" cols="100" placeholder="type here.."></textarea>
+            <br><br>
+            <button class="bt" onclick="addRecommendation()">Submit</button>
+            <br>
+            <br><br> <br>
+        </div>
+        
+        <div class="popup" id="popup" class="flex_center" >
+      <img src="html_finalprojimages/up.png"/>
+      <h3>Thanks for the recomandation</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+    </section>
+</body>
+</html>
